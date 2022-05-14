@@ -1,25 +1,19 @@
 #!/bin/bash
 # upda: "update all" (Actualiza los paquetes apt, flatpak y snap)
 
-echo -e "\n\n\n"
-echo \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-echo --- UPDATE ALL ---
-echo \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+echo -e "\n\n///////////// UPDATING /////////////"
 
-echo -e "\nAPT UPDATE"
+echo -e "APT UPDATE"
 sudo apt update
-echo -e "\n APT UPGRADE"
+echo -e "APT UPGRADE"
 sudo apt upgrade
-echo -e "\nAPT AUTOREMOVE"
+echo -e "APT AUTOREMOVE"
 sudo apt autoremove
 
-echo -e "\n\nFLATPAK UPDATE"
+echo -e "FLATPAK UPDATE"
 sudo flatpak update
 
-echo -e "\n\n SNAP REFRESH"
-sudo snap refresh 
-echo -e "\n\n"
-echo //////////////////////
-echo --- END UPDATE ALL ---
-echo //////////////////////
-echo -e "\n"
+echo -e "SNAP REFRESH"
+sudo snap refresh
+
+echo -e "\n\n///////////// UPDATED /////////////"
