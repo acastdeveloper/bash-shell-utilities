@@ -1,0 +1,4 @@
+#!/bin/bash
+# upup: update and upgrade everything with their dependencies
+
+sudo apt update && sudo apt upgrade -y
