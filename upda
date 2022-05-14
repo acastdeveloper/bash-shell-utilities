@@ -1,19 +1,32 @@
 #!/bin/bash
-# upda: "update all" (Actualiza los paquetes apt, flatpak y snap)
+# upda = "updates all". It updates packages: apt, flatpak y snap).
 
+# It's not very sofisticated, but it saves time.
+
+echo -e "\e[32m"
 echo -e "\n\n///////////// UPDATING /////////////"
 
+echo -e "\e[32m\n"
 echo -e "APT UPDATE"
 sudo apt update
+
+echo -e "\e[32m\n"
 echo -e "APT UPGRADE"
 sudo apt upgrade
+
+echo -e "\e[32m\n"
 echo -e "APT AUTOREMOVE"
 sudo apt autoremove
 
+echo -e "\e[32m\n"
 echo -e "FLATPAK UPDATE"
 sudo flatpak update
 
+echo -e "\e[32m\n"
 echo -e "SNAP REFRESH"
 sudo snap refresh
 
-echo -e "\n\n///////////// UPDATED /////////////"
+echo -e "\e[32m\n"
+echo -e "///////////// UPDATED /////////////\n\n"
+
+echo -e "\e[0m"
