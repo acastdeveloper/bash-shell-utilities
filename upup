@@ -1,4 +1,12 @@
 #!/bin/bash
-# upup: update and upgrade everything with their dependencies
+# upup: update and upgrade everything with their dependencies on apt packages
 
-sudo apt update && sudo apt upgrade -y
+echo -e "\e[32m\n\n"
+echo -e "///////////// UPDATING AND UPGRADING /////////////"
+echo -e "   sudo apt update && sudo apt upgrade -y\e[0m"
+
+    sudo apt update && sudo apt upgrade -y
+
+echo -e "\e[32m"
+echo -e "///////////// UPDATED AND UPGRADED /////////////"
+echo -e "\n\n\e[0m"
