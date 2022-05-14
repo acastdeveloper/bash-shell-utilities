@@ -3,30 +3,35 @@
 
 # It's not very sofisticated, but it saves time.
 
-echo -e "\e[32m"
-echo -e "\n\n///////////// UPDATING /////////////"
+echo -e "\e[32m\n\n"
+echo -e "///////////// UPDATING /////////////"
 
-echo -e "\e[32m\n"
+echo -e "\n\e[32m"
 echo -e "APT UPDATE"
-sudo apt update
+    sudo apt update
 
-echo -e "\e[32m\n"
+
+echo -e "\n\e[32m"
 echo -e "APT UPGRADE"
-sudo apt upgrade
+    sudo apt upgrade
 
-echo -e "\e[32m\n"
+
+echo -e "\n\e[32m"
 echo -e "APT AUTOREMOVE"
-sudo apt autoremove
+    sudo apt autoremove
 
-echo -e "\e[32m\n"
+
+echo -e "\n\e[32m"
 echo -e "FLATPAK UPDATE"
-sudo flatpak update
+    sudo flatpak update
 
-echo -e "\e[32m\n"
+
+echo -e "\n\e[32m"
 echo -e "SNAP REFRESH"
-sudo snap refresh
+    sudo snap refresh
 
-echo -e "\e[32m\n"
-echo -e "///////////// UPDATED /////////////\n\n"
 
-echo -e "\e[0m"
+echo -e "\n\e[32m"
+echo -e "///////////// UPDATED /////////////"
+
+echo -e "\n\n\e[0m"
